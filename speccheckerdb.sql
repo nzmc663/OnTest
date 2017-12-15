@@ -1,25 +1,3 @@
-/*
-Navicat MySQL Data Transfer
-
-Source Server         : test
-Source Server Version : 50637
-Source Host           : localhost:3306
-Source Database       : jeetest
-
-Target Server Type    : MYSQL
-Target Server Version : 50637
-File Encoding         : 65001
-
-Date: 2017-12-08 12:57:50
-*/
-
-SET FOREIGN_KEY_CHECKS=0;
-
--- ----------------------------
--- Table structure for calendar
--- ----------------------------
-DROP TABLE IF EXISTS `calendar`;
-CREATE TABLE `calendar` (
   `id` varchar(64) NOT NULL COMMENT '主键',
   `title` varchar(64) DEFAULT NULL COMMENT '事件标题',
   `starttime` datetime DEFAULT NULL COMMENT '事件开始时间',
